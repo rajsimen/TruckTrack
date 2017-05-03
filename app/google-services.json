@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "891252224419",
+    "firebase_url": "https://truck-tracker-2d6bb.firebaseio.com",
+    "project_id": "truck-tracker-2d6bb",
+    "storage_bucket": "truck-tracker-2d6bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891252224419:android:1a24a12c969118ed",
+        "android_client_info": {
+          "package_name": "android.ezlorry.ccorp.trucktrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891252224419-5auq3o5u4s13lovlcle7ajnjp3tceauv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjJi_mCU18dOxXtKi-3f5DHHe84GIwEwM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
