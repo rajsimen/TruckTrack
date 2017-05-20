@@ -4,6 +4,7 @@ package android.ezlorry.ccorp.trucktrack.fragment;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.ezlorry.ccorp.trucktrack.R;
+import android.graphics.Color;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -25,6 +26,8 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.Circle;
+import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -64,7 +67,7 @@ public class MapViewFragment extends Fragment implements OnMapReadyCallback, Con
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
 
         mContext = getActivity();
-        View view=inflater.inflate(R.layout.mapview_main, container, false);
+        View view=inflater.inflate(R.layout.mainscreen, container, false);
 
         mMapView = (MapView) view.findViewById(R.id.mapview);
         mMapView.onCreate(savedInstanceState);
@@ -123,7 +126,13 @@ public class MapViewFragment extends Fragment implements OnMapReadyCallback, Con
             // Add a marker in Sydney and move the camera
             LatLng sydney = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
             Log.v("GeoPoint:::",sydney.toString());
-            mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+
+             mMap.addCircle(new CircleOptions()
+                    .center(sydney)
+                    .radius(3)
+                    .strokeColor(Color.RED)
+                    .fillColor(Color.WHITE));
+           // mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,15f));
         }
     }

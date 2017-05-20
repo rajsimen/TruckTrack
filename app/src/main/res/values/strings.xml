@@ -34,4 +34,14 @@
     <string name="start_trip">Start Trip</string>
     <string name="from">From</string>
     <string name="to">To</string>
+    <string name="trip_id">Trip Id :</string>
+    <string name="customer_name">Customer Name :</string>
+    <string name="customer_phoneno">Customer Phoneno :</string>
+    <string name="source">Source :</string>
+    <string name="destination">Destination :</string>
+    <string name="started_time">Started Time :</string>
+    <string name="end_time">Approx End Time :</string>
+    <string name="on_the_way">On The Way</string>
+    <string name="onscreen">Please stay on screen while trip</string>
+    <string name="status">Arrived</string>
 </resources>
